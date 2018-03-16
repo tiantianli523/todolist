@@ -1,0 +1,223 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex-training</title>
+  <style type="text/css">
+    .container{
+      display: flex;
+      background: rgba(54, 54, 54, 0.56);
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    div[class^='box']{
+      width: 130px;
+      height: 130px;
+      background: #ffffee;
+      margin: 5px;
+      box-shadow: 2px 2px 4px #9d2323;
+      display: flex;
+      border-radius: 5px;
+    }
+    .item{
+      width: 23px;
+      height: 23px;
+      border-radius: 23px;
+      background: red;
+    }
+    .box_1{
+      justify-content: center;
+      align-items: center;
+    }
+    .box_2{
+      justify-content: space-around;
+      align-items: center;
+    }
+    .box_3{
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .box_3 .item:nth-child(2){
+      align-self: center;
+    }
+    .box_3 .item:nth-child(3){
+      align-self: flex-end;
+    }
+    .box_4{
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .box_4 div{
+      display: flex;
+      justify-content: space-around;
+    }
+    .box_5{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    .box_5 div{
+      display: flex;
+      justify-content: space-around;
+    }
+    .box_5 div:nth-child(2){
+      justify-content: center;
+    }
+    .box_6{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .box_6 div{
+      display: flex;
+      justify-content: space-around;
+    }
+    .background_training{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .yazi{
+      width: 100px;
+      height: 100px;
+      border: 3px dashed #9d2323;
+      background: url("./static/cat.png") center no-repeat;
+      background-size: contain;
+    }
+    .many_background{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .border_image{
+      border: 50px solid transparent;
+      background: linear-gradient(rgba(68, 68, 68, 0.62),white),url('./static/cat2.png');
+      background-size: cover;
+      background-clip: padding-box,border-box;
+      background-origin: border-box;
+      width: 500px;
+      resize: both;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="box_1">
+    <div class="item"></div>
+  </div>
+  <div class="box_2">
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="box_3">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+  </div>
+  <div class="box_4">
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </div>
+  <div class="box_5">
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div>
+      <div class="item"></div>
+    </div>
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </div>
+  <div class="box_6">
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+    <div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </div>
+</div>
+<div class="background_training">
+  <div class="yazi"></div>
+</div>
+<div class="many_background">
+<div class="border_image">啊是的飞机啊是就卡速度加啊四啊是几点发顺丰违法哈高科哈市ui更为关键啊
+  是德国手动啊哈加啊四属于一般是的比喻的生产的同学从发错地方烦烦烦分瑞特手电筒vestes ever额
+  的v突然忒恶恶的人不多就都是v人突然不能就v版本号v高层人士v日本人突然接到消息从v不你
+  是东方故事本身的nsa就喀什地方啊是附件ask了放假卡上飞机i啊放假啊开始攻击我如果没事，你的咯咯阿历克斯个
+  阿斯顿发生尽快发货急啊看是否啊是法国和瑞国阿三 啊阿斯顿发生纠纷哈萨克发货卡死话费卡刷饭卡刷饭卡设计开发哈四大皆空飞洒地方啥就看到废话
+  阿斯顿发链接啊舒服撒混纺纱很快就杀个建卡挂号就卡刷国航金卡是根据考生丢挖个是勾搭帅哥啊手机酷狗哈萨克公交卡的是gdjk电话系啊刷公交卡是
+  是大嘎斯公交卡是个哈开始刚到家啊是回归的很少看见啥好噶咯但是估计啥韩国进口是嗲个系啊是几个阿三嘎斯大噶是</div>
+</div>
+</body>
+</html>
+-->
+
+<html>
+<head>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />-->
+  <style>
+    body{
+      /*margin:0;*/
+    }
+    .warper{
+      /*height:100%;*/
+      /*display: flex;*/
+      /*flex-direction:column;*/
+      /*align-content:stretch;*/
+    }
+    /*.header{*/
+      /*height:5rem;*/
+      /*background-color: red;*/
+      /*order: 0;*/
+      /*flex-shrink: 0;*/
+    /*}*/
+    /*.footer{*/
+      /*height:3rem;*/
+      /*background-color: blue;*/
+      /*order: 2;*/
+      /*flex-shrink: 0;*/
+    /*}*/
+    /*.container{*/
+      /*flex-grow:999;*/
+      /*order: 1;*/
+      /*overflow:hidden;*/
+      /*position: relative;*/
+    /*}*/
+    /*.container .baseline{*/
+      /*min-height:100%;*/
+      /*height:100%;*/
+      /*overflow:auto;*/
+    /*}*/
+  </style>
+</head>
+<body>
+<div class="warper">
+  <div class="header">header</div>
+  <section class="container">
+    <div class="baseline">
+      <p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p><p>container</p>
+    </div>
+  </section>
+  <div class="footer">footer</div>
+</div>
+</body>
+</html>
